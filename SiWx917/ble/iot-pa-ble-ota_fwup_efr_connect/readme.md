@@ -33,13 +33,13 @@
 This application demonstrates the procedure to update the SiWx91x module's firmware by receiving a firmware file from a remote device via BLE. The application has the provision to upgrade both TA and M4 firmwares. 
 The update process works as follows:
    - The SiWx91x module is configured as an advertiser, and an OTA GATT database acts as a GATT server.
-   - The GUI/EFR Connect App is configured as a BLE central and GATT Client.
-   - When the BLE connection is established between the SiWx91x device, you can browse either M4 or TA file from the GUI/EFR Connect App.
-   - The GUI/EFR Connect App sends the selected firmware, either M4 firmware or TA firmware file.
+   - The GUI/Simplicity Connect App(formerly EFR Connect App) is configured as a BLE central and GATT Client.
+   - When the BLE connection is established between the SiWx91x device, you can browse either M4 or TA file from the GUI/Simplicity Connect App(formerly EFR Connect App).
+   - The GUI/Simplicity connect App (formerly EFR Connect App) sends the selected firmware, either M4 firmware or TA firmware file.
    - The OTA application programs the firmware onto the SiWx91x flash memory and reboots it.
 
 The application has the provision to upgrade the firmware with below tools
-- EFR Connect Mobile example
+- Simplicity Connect App(formerly EFR Connect App)
 - Si917-OTA Firmware Update Python Script
 - Python script
 
@@ -48,7 +48,7 @@ The application has the provision to upgrade the firmware with below tools
 The user must configure the following items before launching the application.
 
 ### 2.1 Hardware Requirements
-- A smart phone with Silicon labs **EFR Connect** app
+- A smart phone with Silicon labs **Simplicity Connect** app
 - Windows PC
 #### **2.1.1 SoC** 
 
@@ -69,7 +69,7 @@ The user must configure the following items before launching the application.
 - SiWx917_WiSeConnect_SDK [link](https://github.com/SiliconLabs/wiseconnect)
 - Simplicity Studio IDE
   - To download and install the Simplicity Studio IDE, refer to the [Simplicity Studio IDE Set up](https://docs.silabs.com/) section in ***Getting started with SiWx91x*** guides.
-- EFR Connect application for [Android](https://play.google.com/store/apps/details?id=com.siliconlabs.bledemo&hl=en&gl=US) or [iOS](https://apps.apple.com/us/app/efr-connect-ble-mobile-app/id1030932759)
+- Simplicity Connect App(formerly EFR Connect App) for [Android](https://play.google.com/store/apps/details?id=com.siliconlabs.bledemo&hl=en&gl=US) or [iOS](https://apps.apple.com/us/app/efr-connect-ble-mobile-app/id1030932759)
 - Docklight or Tera Term or a similar tool for reading serial prints
 
 - Python version 3.7.9 or above
@@ -183,7 +183,7 @@ This section outlines the application's step-by-step execution process.
 - Rename the firmware format from.rps to.gbl, as shown below.
    <br><img src="resources/readme/firmwareformat.png" alt=""><br>
 
-## **6.4 Firmware Upgrade with EFR Connect Mobile App**
+## **6.4 Firmware Upgrade with Simplicity Connect App**
 
 - Launch the EFR Connect App. If BLE is not enabled, enable it.
    <br><img src="resources/readme/EC2.png" alt="" width=250 height=500><br>
